@@ -1,10 +1,6 @@
-import src.CreationalDesign.Builder.Student;
-import src.CreationalDesign.Builder.User;
-import src.CreationalDesign.Factory.OrderService;
-import src.CreationalDesign.Singleton.DatabaseConnect;
-import src.CreationalDesign.Singleton.PostManager;
-import src.CreationalDesign.Singleton.StudentManager;
-import src.CreationalDesign.Singleton.UserManager;
+
+import src.BehavioralDesign.TemplateMethod.ChessGame;
+import src.BehavioralDesign.TemplateMethod.Game;
 
 public class App {
      public static void main(String[] args) {
@@ -32,20 +28,24 @@ public class App {
 
         // User u2 = new User();
 
-        Student s = new Student();
-        s.setName("Luan");
-        s.setAge(20);
-        s.setMajor("Computer Science");
-        s.setGpa("3.5");
-        s.setAddress("Ha Noi");
-        s.setCity("Ha Noi");
-        s.setState("Ha Noi");
-        s.setZip("123456");
-        s.setCountry("Vietnam");
+        // Student s = new Student();
+        // s.setName("Luan");
+        // s.setAge(20);
+        // s.setMajor("Computer Science");
+        // s.setGpa("3.5");
+        // s.setAddress("Ha Noi");
+        // s.setCity("Ha Noi");
+        // s.setState("Ha Noi");
+        // s.setZip("123456");
+        // s.setCountry("Vietnam");
 
-        s.setName("Quan");
-        
+        // s.setName("Quan");
 
         
+        // Gia su mk can nang cap he thong co chuyen tien usd
+        // BankingAdaptor bankingAdaptor = new BankingAdaptor();
+        // bankingAdaptor.processPayment("123456789", "987654321", 100, "USD");     
+        Game chess = new ChessGame();
+        chess.play();   
     }
 }
